@@ -3,7 +3,7 @@
 ####################################################
 
 resource "azurerm_route" "TerraRoute" {
-  for_each            = var.DestSubnetList
+  for_each            = var.Destination
   name                = "route-to-${each.key}"
   resource_group_name = var.RgName
   route_table_name    = var.RouteTableName
