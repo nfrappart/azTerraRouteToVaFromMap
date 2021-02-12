@@ -1,6 +1,6 @@
 
 # Route module
-This module create as many route as provided in map variable named DestSubnetList
+This module create as many route as provided in map variable named Destination
 It will :
 - create n routes
 - associates thoses routes with a route table
