@@ -9,7 +9,7 @@ It will :
 
 ```hcl
 module "nva-udr" {
-  source = "github.com/nfrappart/azTerraRouteToVA"
+  source = "github.com/nfrappart/azTerraRouteToVaFromMap"
   Destination = {
     "Spoke1-web-subnet" = "10.1.0.0/24",
     "Spoke1-app-subnet" = "10.1.1.0/24",
