@@ -2,15 +2,15 @@
 # This module creates route for azure route tables #
 ####################################################
 
-variable "RgName" {
+variable "rgName" {
   type = string
 }
-variable "RouteTableName" {
+variable "routeTableName" {
   type = string
 }
-variable "Destination" {
+variable "destination" {
   type = map
 }
-variable "NextHopIP" {
+variable "nextHopIP" {
   type = string
 }

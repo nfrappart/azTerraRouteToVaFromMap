@@ -3,11 +3,11 @@
 ####################################################
 
 resource "azurerm_route" "TerraRoute" {
-  for_each            = var.Destination
+  for_each            = var.destination
   name                = "route-to-${each.key}"
-  resource_group_name = var.RgName
-  route_table_name    = var.RouteTableName
+  resource_group_name = var.rgName
+  route_table_name    = var.routeTableName
   address_prefix      = each.value
   next_hop_type       = "VirtualAppliance"
-  next_hop_in_ip_address = var.NextHopIP
+  next_hop_in_ip_address = var.nextHopIP
 }
